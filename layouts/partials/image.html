@@ -1,0 +1,18 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="main-slider">
+                <div class="slide-text">
+                  {{ $products := getJSON "/data/header/header.json" }}
+                    <h1 style="color:#f7f9fc">{{ $products.title }}</h1>
+                    <p style="color:#f7f9fc">{{ $products.des }}</p>
+                </div>
+                <img src="/images/mobile_logo.png" style="display:none;" class="slider-house logoimage" alt="slider image" id ="logo">
+                <img src="/images/home/slider/logo_down.png" class="slider-hill logoimage" alt="slider image" id ="logo1">
+                <img src="/images/home/slider/logo_up.png" class="slider-house logoimage" alt="slider image" id ="logo2">
+                <img src="/images/home/slider/logo_left.png" class="slider-birds1 logoimage" alt="slider image" id ="logo3">
+                <img src="/images/home/slider/logo_right.png" class="slider-birds2 logoimage" alt="slider image" id ="logo4">
+            </div>
+        </div>
+    </div>
+    <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
